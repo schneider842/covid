@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-   <%@page import="covid.Model" import="covid.Model"%>
+   <%@page import="model.Model" import="covid.Model"%>
  <%@taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
     
 <!DOCTYPE html>
@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<jsp:useBean id="model" class="covid.Model"></jsp:useBean>
+<jsp:useBean id="model" class="model.Model"></jsp:useBean>
 	<center>
 		<h3>Liste des Cas</h3>
 	</center>
@@ -23,7 +23,7 @@
 	
 		<table class="table table-striped">
 			<tr>
-				<th>Id_cas</th>
+				
 				<th>Nom_Complet</th>
 				<th>Telephone</th>
 				<th>Adresse</th>
@@ -31,8 +31,7 @@
 				<th>Etat</th>
 			</tr>
 			<c:forEach var="c" items="${model.getListe()}">
-				<tr>
-					<td>${c.getId_cas()}</td>
+				<tr>					
 					<td>${c.getNom_complet()}</td>
 					<td>${c.getTelephone()}</td>
 					<td>${c.getAdresse()}</td>

@@ -1,0 +1,28 @@
+
+<project>
+<target name="clean">
+	<delete dir="bin"/>
+	</target>
+	<target name="compile">
+	<mkdir dir="bin"/>
+	<javac destdir="bin" srcdir="src/model;src/dao" classpath="WebContent\WEB-INF\lib\junit.jar;WebContent\WEB-INF\lib\org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
+	</target>
+<target name="Tests" depends="compile">
+	<junit>
+		<classpath>
+		<pathelement location="C:\Users\Administrator\eclipse-workspace\covid\WebContent\WEB-INF\lib\junit.jar"/>
+		<pathelement location="C:\Users\Administrator\eclipse-workspace\covid\WebContent\WEB-INF\lib\org.hamcrest.core_1.3.0.v20180420-1519.jar"/>		<pathelement location="${basedir}\bin"/>
+		<pathelement location="C:\Users\Administrator\eclipse-workspace\covid\WebContent\WEB-INF\lib\mysql-connector-java-5.1.30-bin.jar"/>
+		<pathelement location="C:\Users\Administrator\eclipse-workspace\covid\WebContent\WEB-INF\lib\jstl-1.2.jar"/>
+		</classpath>	
+	<formatter type="xml"/>
+	<test name="model.TestCovid" outfile="resultCovid"/>
+	</junit>	
+</target>	
+	
+	
+
+
+</project>
+	
+	

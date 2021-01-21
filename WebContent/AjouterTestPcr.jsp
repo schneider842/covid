@@ -7,7 +7,7 @@
 <title>AjouterTestPcr</title>
 </head>
 <body>
-<jsp:useBean id="Mod" class="covid.ModelTestpcr"></jsp:useBean>
+<jsp:useBean id="Mod" class="model.ModelTestpcr"></jsp:useBean>
 
 	<h2>Ajouter un Test Pcr</h2>
 	<form action="AffichageTest" method="post" name="informations">

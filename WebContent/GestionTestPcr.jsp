@@ -12,7 +12,7 @@
 	crossorigin="anonymous">
 </head>
 <body>
-<jsp:useBean id="model1" class="covid.ModelTestpcr"></jsp:useBean>
+<jsp:useBean id="model1" class="model.ModelTestpcr"></jsp:useBean>
 	<center>
 		<h3>Liste des TestPcr</h3>
 	</center>

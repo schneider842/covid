@@ -7,14 +7,10 @@
 <title>Ajouter des cas</title>
 </head>
 <body>
-<jsp:useBean id="Mod" class="covid.Model"></jsp:useBean>
+<jsp:useBean id="Mod" class="model.Model"></jsp:useBean>
 	<h2>Ajout d'un cas</h2>
-	<form action="Affichage.jsp" method="get" name="informations">
-		<table width="60%" border="0">
-			<tr>
-				<td>Id_cas  : </td>
-				<td><input name="Id_cas" type="text" value="" /></td>
-			</tr>
+	<form action="ServletTraitementPCR" method="post" name="informations">
+		<table width="60%" border="0">		
 			<tr>
 				<td>Nom complet : </td>
 				<td><input name="Nom_complet" type="text" value="" /></td>

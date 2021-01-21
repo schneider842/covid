@@ -7,12 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="Gestion.jsp" method="post">  
+<form action="ServletAuthentification" method="get">  
 <h1>Authentification</h1>
 
 
-Login:			<input type="text" name="login"/><br/><br/>  
-Mot de passe:	<input type="password" name="pwd"/><br/><br/>  
+Login:			<input type="text" name="login" pattern=".{6,}"/><br/><br/>  
+Mot de passe:	<input type="password" name="password"/><br/><br/>  
 
 			<input type="submit" value="Se connecter"/>  
 </form>
