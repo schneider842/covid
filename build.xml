@@ -17,6 +17,7 @@
 		</classpath>	
 	<formatter type="xml"/>
 	<test name="model.TestCovid" outfile="resultCovid"/>
+	<test name="model.Testdate" outfile="resultdate"/>
 	</junit>	
 </target>	
 	

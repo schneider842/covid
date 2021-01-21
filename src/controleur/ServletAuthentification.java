@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import model.Model;
+
 
 /**
  * Servlet implementation class ServletAuthentification
@@ -38,7 +38,7 @@ public class ServletAuthentification extends HttpServlet {
 		String pwd = request.getParameter("password");
 		
 
-		if (Model.chercherUser(login, pwd)== null) {
+		if (model.Model.chercherUser(login, pwd)== null) {
 			
 			request.getRequestDispatcher("/index.jsp").forward(request, response);
 			System.out.println("hello");

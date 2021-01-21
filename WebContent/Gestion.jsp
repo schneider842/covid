@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-   <%@page import="model.Model" import="covid.Model"%>
+   <%@page import="model.Model" import="model.Model"%>
  <%@taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
     
 <!DOCTYPE html>
