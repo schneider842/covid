@@ -94,7 +94,7 @@ public class covid {
 		
 	public boolean validationcodepostale(String cde)
 	{
-	Integer.parseInt(code_postale);
+	Integer.parseInt(cde);
 	
 		if (cde.length()==4)
 		{
