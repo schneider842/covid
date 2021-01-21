@@ -44,11 +44,7 @@ public class ServletAuthentification extends HttpServlet {
 			System.out.println("hello");
 			
 		} else {
-			//HttpSession session = request.getSession(true);
-			//Model m = new Model();
-		
-				
-			//session.setAttribute("model", m);
+			HttpSession session = request.getSession(true);							
 			request.getRequestDispatcher("/Gestion.jsp").forward(request, response);
 		}
 		out.close();
